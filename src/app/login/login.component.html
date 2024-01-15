@@ -1,0 +1,27 @@
+<div class="main">  	
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name"  >
+                <input type="email" name="email" placeholder="Email"  >
+                <input type="password" name="pswd" placeholder="Password"  >
+      <input type="text" name="txt" placeholder="Phone No"  >
+                <button (click)="onSignup()">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" >
+                <input type="password" name="pswd" placeholder="Password" >
+                <button onclick="login()" routerLink="./home"  (click)="onLogin()">Login</button>
+
+            </form>
+        </div>
+     <script> 
+        function login(){this.router.navigate(['/home']);}</script>
+        
+</div>
